@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/domuk-k/preo/main/schemas/claim.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "claim", "status", "source_ids", "checked_on"],
+  "properties": {
+    "id": {"type": "string", "pattern": "^[a-z0-9]+(?:[._-][a-z0-9]+)*$"},
+    "claim": {"type": "string", "minLength": 10},
+    "status": {"enum": ["verified", "secondary", "unverified", "contradicted"]},
+    "source_ids": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+    "checked_on": {"type": "string", "format": "date"},
+    "notes": {"type": "string", "minLength": 1}
+  }
+}

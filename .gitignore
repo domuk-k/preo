@@ -1,0 +1,31 @@
+.worktrees/
+.DS_Store
+.venv/
+__pycache__/
+.pytest_cache/
+*.py[cod]
+
+# Third-party source material stays local. Only the policy README is tracked.
+research/sources/*
+!research/sources/README.md
+
+# Do not commit copied standards, papers, books, or archives.
+*.[pP][dD][fF]
+*.[dD][oO][cC]
+*.[dD][oO][cC][xX]
+*.[eE][pP][uU][bB]
+*.[hH][wW][pP]
+*.[hH][wW][pP][xX]
+*.[oO][dD][tT]
+*.[rR][tT][fF]
+*.[pP][aA][gG][eE][sS]
+*.[pP][pP][tT]
+*.[pP][pP][tT][xX]
+*.[xX][lL][sS]
+*.[xX][lL][sS][xX]
+*.[zZ][iI][pP]
+*.[tT][aA][rR]
+*.[gG][zZ]
+*.[tT][aA][rR].[gG][zZ]
+*.7[zZ]
+*.[rR][aA][rR]

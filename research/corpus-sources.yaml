@@ -1,0 +1,179 @@
+- id: dtaq.ram-terms
+  name: 국방기술품질원 RAM 용어 정의 20250915
+  provider: 국방기술품질원
+  domains: [public, safety-mechanical]
+  url: https://www.data.go.kr/data/15149399/fileData.do
+  formats: [csv, json, xml]
+  estimated_size: 고정 스냅숏과 API 응답을 확보하지 않아 용어 레코드 수 미측정
+  access_method: 공공데이터포털 파일 수동 다운로드 또는 승인 후 오픈 API
+  copyright_notice: >-
+    해당 항목은 이용허락범위 제한 없음으로 표시된다. 공공데이터포털 이용정책을
+    적용하되 제공기관, 제목, 20250915 버전, 확인일을 보존하고 제3자 권리를 다시
+    검사한다.
+  redistribution: allowed
+  derivatives: allowed
+  personal_data_risk: low
+  collection_status: candidate
+  checked_on: "2026-08-08"
+
+- id: molit.aim-quality-manual
+  name: 항공정보 품질경영시스템 운영 매뉴얼
+  provider: 국토교통부
+  domains: [public, aviation-transport]
+  url: https://law.go.kr/LSW/admRulInfoP.do?admRulSeq=2100000238114
+  formats: [html, hwp, pdf, doc]
+  estimated_size: 행정규칙 본문과 첨부파일을 고정 수집하지 않아 문서·쪽 수 미측정
+  access_method: 국가법령정보센터에서 행정규칙 본문을 수동 열람
+  copyright_notice: >-
+    국가법령정보센터 정책상 보호받지 않는 법령정보와 법제처가 권리를 모두 가진
+    자료는 자유 이용할 수 있다. 이 후보는 행정규칙 본문에만 한정하며 첨부파일,
+    도면과 제3자 자료는 별도 권리 확인 전 제외한다.
+  redistribution: allowed
+  derivatives: allowed
+  personal_data_risk: none
+  collection_status: candidate
+  checked_on: "2026-08-08"
+
+- id: molit.construction-standards
+  name: KDS 10 00 00 및 KCS 10 00 00 공통기준
+  provider: 국토교통부
+  domains: [public, safety-mechanical]
+  url: https://law.go.kr/LSW/admRulLsInfoP.do?admRulSeq=2100000201053
+  formats: [catalog-html]
+  estimated_size: 행정규칙 래퍼만 확인하여 실제 KDS·KCS 문서 수와 분량 미측정
+  access_method: 국가법령정보센터 행정규칙 래퍼와 메타데이터만 수동 열람
+  copyright_notice: >-
+    확인한 law.go 페이지는 실질 KDS·KCS 내용을 담은 본문이 아니라 행정규칙
+    래퍼와 첨부자료 포인터다. 실질 첨부파일은 검사하지 않았으므로 국가법령정보센터
+    정책을 첨부자료의 재배포나 변형 허락으로 확대하지 않는다.
+  redistribution: metadata-only
+  derivatives: unknown
+  personal_data_risk: none
+  collection_status: candidate
+  checked_on: "2026-08-08"
+
+- id: lh.specifications
+  name: 한국토지주택공사 구 LH전문시방서 20160523
+  provider: 한국토지주택공사
+  domains: [public, safety-mechanical]
+  url: https://www.data.go.kr/data/15084347/fileData.do
+  formats: [catalog-html]
+  estimated_size: 공공데이터포털 카탈로그 설명 기준 PDF 53건(현재 연결 대상과 동일성은 미확인)
+  access_method: 공공데이터포털 카탈로그 메타데이터만 수동 열람
+  copyright_notice: >-
+    카탈로그는 20160523 판본과 PDF 53건을 기술하지만 현재 연결 대상은
+    LHCS 10 10 00의 2020-12-09 뷰어다. 카탈로그의 이용허락 표시가 이 현재
+    대상이나 53개 원문과 정확히 대응하는지 확인하지 못했으므로 메타데이터만 둔다.
+  redistribution: metadata-only
+  derivatives: unknown
+  personal_data_risk: low
+  collection_status: candidate
+  checked_on: "2026-08-08"
+
+- id: molit.environmental-cost-guide
+  name: 환경관리비 산출기준 및 해설 정보 20200916
+  provider: 국토교통부
+  domains: [public, safety-mechanical]
+  url: https://www.data.go.kr/data/15035529/fileData.do
+  formats: [catalog-html]
+  estimated_size: 카탈로그 형식 표시가 충돌하고 원문에 도달하지 못해 파일·레코드 수 미측정
+  access_method: 공공데이터포털 카탈로그 메타데이터만 수동 열람
+  copyright_notice: >-
+    구조화 메타데이터는 PDF를 표시하지만 설명 본문은 CSV라고 적어 형식이
+    충돌한다. 연결된 국토교통부 제공 URL은 리디렉션 반복으로 원문에 도달하지
+    못해 카탈로그 항목과 실제 페이로드의 동일성·권리를 확인하지 못했다.
+  redistribution: metadata-only
+  derivatives: unknown
+  personal_data_risk: low
+  collection_status: candidate
+  checked_on: "2026-08-08"
+
+- id: kobaco.production-safety-guide
+  name: 광고제작현장 안전 및 보건 가이드라인 연구보고서 및 매뉴얼 20241031
+  provider: 한국방송광고진흥공사
+  domains: [public, safety-mechanical]
+  url: https://www.data.go.kr/data/15141914/fileData.do
+  formats: [pdf]
+  estimated_size: 고정 원문 스냅숏을 확보하지 않아 보고서·매뉴얼의 파일·쪽 수 미측정
+  access_method: 공공데이터포털의 KOBACO 제공 URL에서 수동 열람
+  copyright_notice: >-
+    해당 카탈로그 항목은 이용허락범위 제한 없음으로 표시된다. 제공기관, 제목,
+    20241031 판본과 확인일을 보존하며 연구보고서 안의 제3자 사진·도표·해외
+    자료는 개별 허락 확인 전 제외한다.
+  redistribution: allowed
+  derivatives: allowed
+  personal_data_risk: medium
+  collection_status: candidate
+  checked_on: "2026-08-08"
+
+- id: kubernetes.ko-docs
+  name: Kubernetes 한국어 문서
+  provider: Kubernetes Authors
+  domains: [it]
+  url: https://github.com/kubernetes/website/tree/main/content/ko
+  formats: [markdown, yaml]
+  estimated_size: 고정 커밋을 정하지 않아 한국어 문서 파일·문장 수 미측정
+  access_method: 고정 커밋을 지정한 Git 체크아웃 또는 GitHub HTTPS 열람
+  copyright_notice: >-
+    website 저장소의 문서 라이선스는 CC BY 4.0이다. 저작자와 라이선스 링크를
+    표시하고 수정 여부를 알리며, 상표와 별도 고지가 붙은 자료는 분리한다.
+  redistribution: allowed
+  derivatives: allowed
+  personal_data_risk: low
+  collection_status: candidate
+  checked_on: "2026-08-08"
+
+- id: python.ko-docs
+  name: Python 한국어 문서 번역 저장소
+  provider: Python Software Foundation
+  domains: [it]
+  url: https://github.com/python/python-docs-ko
+  formats: [gettext-po, rst]
+  estimated_size: 대상 버전 브랜치와 고정 커밋을 정하지 않아 PO·RST 파일과 문장 수 미측정
+  access_method: 버전 브랜치와 고정 커밋을 지정한 Git 또는 HTTPS 열람
+  copyright_notice: >-
+    공식 문서 라이선스는 PSF License Version 2가 문서의 복제·배포·변형을
+    허용하고 고지 보존을 요구한다. 그러나 번역 저장소 기본 브랜치에는 별도
+    라이선스 파일이 보이지 않으므로 대상 버전 브랜치의 번역 기여 조건과 상위
+    고지를 확인하기 전에는 메타데이터만 다룬다.
+  redistribution: metadata-only
+  derivatives: unknown
+  personal_data_risk: low
+  collection_status: candidate
+  checked_on: "2026-08-08"
+
+- id: mdn.ko-content
+  name: MDN 한국어 번역 콘텐츠
+  provider: MDN Web Docs contributors
+  domains: [it]
+  url: https://github.com/mdn/translated-content/tree/main/files/ko
+  formats: [markdown, yaml]
+  estimated_size: 고정 커밋을 정하지 않아 한국어 Markdown 파일·문장 수 미측정
+  access_method: 고정 커밋을 지정한 Git 체크아웃 또는 GitHub HTTPS 열람
+  copyright_notice: >-
+    저장소의 산문은 CC BY-SA 2.5이며 출처표시와 동일조건변경허락을 따라야 한다.
+    코드 예제는 추가 시점에 따라 CC0 또는 MIT 조건이므로 산문 코퍼스에서
+    분리하고 파일별 이력을 확인한다.
+  redistribution: allowed
+  derivatives: allowed
+  personal_data_risk: low
+  collection_status: candidate
+  checked_on: "2026-08-08"
+
+- id: kdca.practice-guidelines
+  name: 2026년 고혈압·당뇨병 등록관리사업 표준실무지침
+  provider: 질병관리청
+  domains: [public, safety-mechanical]
+  url: https://www.kdca.go.kr/kdca/2861/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGa2RjYSUyRjU1JTJGMzA5NjA0JTJGYXJ0Y2xWaWV3LmRvJTNG
+  formats: [pdf]
+  estimated_size: 개별 게시물 원문을 고정 수집하지 않아 파일·쪽 수 미측정
+  access_method: 질병관리청 개별 게시물에서 공공누리 표시 확인 후 수동 열람
+  copyright_notice: >-
+    이 개별 게시물에는 공공누리 표시가 있으나 이미지 대체문구는 출처표시를
+    가리키고 연결된 공식 증서는 제0유형을 가리켜 표시가 일치하지 않는다. 다른
+    지침이나 사이트 전체로 일반화하지 않고 제공기관 확인 전 메타데이터만 둔다.
+  redistribution: metadata-only
+  derivatives: unknown
+  personal_data_risk: medium
+  collection_status: candidate
+  checked_on: "2026-08-08"

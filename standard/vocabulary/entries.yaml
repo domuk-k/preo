@@ -1,0 +1,60 @@
+# Format examples only: no entry in this file is approved KSTL vocabulary.
+
+- id: KSTL-VOC-EXAMPLE-STOP
+  lemma: 정지하다
+  meaning: 기계나 장비의 작동을 멈추게 하다.
+  part_of_speech: verb
+  allowed_forms: [정지하다, 정지한다, 정지하십시오, 정지했다]
+  discouraged_forms: [스톱하다, 멈추게 하다]
+  preferred_replacements:
+    스톱하다: 정지하다
+    멈추게 하다: 정지하다
+  examples:
+    - 비상 버튼을 눌러 장비를 정지하십시오.
+  domains: [example]
+  source_ids: []
+  status: example
+
+- id: KSTL-VOC-EXAMPLE-BREAKER
+  lemma: 전원 차단기
+  meaning: 전기 회로의 전원을 차단하는 장치.
+  part_of_speech: noun
+  allowed_forms: [전원 차단기, 전원 차단기가, 전원 차단기를]
+  discouraged_forms: [메인 브레이커, 차단 스위치]
+  preferred_replacements:
+    메인 브레이커: 전원 차단기
+    차단 스위치: 전원 차단기
+  examples:
+    - 전원 차단기를 내리십시오.
+  domains: [example]
+  source_ids: []
+  status: example
+
+- id: KSTL-VOC-EXAMPLE-INSPECT
+  lemma: 점검하다
+  meaning: 장비의 상태나 작동 여부를 확인하다.
+  part_of_speech: verb
+  allowed_forms: [점검하다, 점검한다, 점검하십시오, 점검했다]
+  discouraged_forms: [체크하다]
+  preferred_replacements:
+    체크하다: 점검하다
+  examples:
+    - 작업 전에 케이블을 점검하십시오.
+  domains: [example]
+  source_ids: []
+  status: example
+
+- id: KSTL-VOC-EXAMPLE-CASE
+  lemma: 경우
+  meaning: 어떤 조건이나 상황을 나타내는 의존 명사.
+  part_of_speech: bound-noun
+  allowed_forms: [경우, 경우에, 경우에는, 경우에도]
+  discouraged_forms: [경우라면, 경우에 있어]
+  preferred_replacements:
+    경우라면: 경우에는
+    경우에 있어: 경우에
+  examples:
+    - 온도가 올라가는 경우에는 전원을 끄십시오.
+  domains: [example]
+  source_ids: []
+  status: example

@@ -1,0 +1,20 @@
+[project]
+name = "preo"
+version = "0.0.0"
+description = "Research data and validation for preo (풀어), a Korean technical-writing skill"
+requires-python = ">=3.11"
+dependencies = [
+  "jsonschema>=4.23,<5",
+  "markdown-it-py>=3.0,<4",
+  "PyYAML>=6.0,<7",
+]
+
+[dependency-groups]
+dev = ["pytest>=8,<9"]
+
+[tool.uv]
+package = false
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"

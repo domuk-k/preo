@@ -1,0 +1,8 @@
+{
+  "name": "preo",
+  "version": "0.1.1",
+  "description": "한국어 기술문서의 꼬인 문장을 푸는 스킬. 한글 이름은 풀어.",
+  "author": { "name": "preo" },
+  "homepage": "https://github.com/domuk-k/preo",
+  "skills": ["./skill/preo"]
+}

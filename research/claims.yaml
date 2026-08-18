@@ -1,0 +1,755 @@
+- id: ste.issue-9.release-date
+  claim: "ASD-STE100 Issue 9의 공식 발행일은 2025-01-15이다."
+  status: verified
+  source_ids: [asd-ste-home, asd-ste-about]
+  checked_on: "2026-08-08"
+  notes: "STEMG 공식 홈페이지와 Issue 9 설명이 같은 날짜를 명시한다."
+
+- id: ste.issue-9.standard-status
+  claim: "ASD-STE100은 Issue 9에서 국제 규격(specification)에서 국제 표준(standard)으로 전환되었다."
+  status: verified
+  source_ids: [asd-ste-home, asd-ste-about]
+  checked_on: "2026-08-08"
+  notes: "상태 전환만 기록하며 발행일은 별도 주장에 둔다."
+
+- id: ste.stewardship
+  claim: "ASD Simplified Technical English Maintenance Group는 ASD-STE100의 유지 관리를 담당한다."
+  status: verified
+  source_ids: [asd-ste-about]
+  checked_on: "2026-08-08"
+  notes: "STEMG의 여러 역할 중 유지 관리 책임만 원자적으로 기록한다."
+
+- id: ste.issue-9.section-count
+  claim: "ASD-STE100 Issue 9의 쓰기 규칙은 9개 섹션으로 나뉜다."
+  status: verified
+  source_ids: [asd-ste-about]
+  checked_on: "2026-08-08"
+  notes: "STEMG 공식 설명의 Rules 항목에서 확인했다."
+
+- id: ste.issue-9.rule-count
+  claim: "ASD-STE100 Issue 9에는 53개의 쓰기 규칙이 있다."
+  status: verified
+  source_ids: [asd-ste-about]
+  checked_on: "2026-08-08"
+  notes: "섹션 수와 분리한 규칙 수 주장이다."
+
+- id: ste.issue-9.dictionary-size
+  claim: "ASD-STE100 Issue 9 통제 사전에는 약 900개의 승인 단어가 있다."
+  status: verified
+  source_ids: [asd-ste-about]
+  checked_on: "2026-08-08"
+  notes: "정확한 고정 수가 아니라 공식 페이지가 사용하는 근삿값이다."
+
+- id: ste.issue-9.copy-cost
+  claim: "ASD STEMG는 ASD-STE100 Issue 9 공식 사본을 무료로 제공한다."
+  status: verified
+  source_ids: [asd-ste-downloads]
+  checked_on: "2026-08-08"
+  notes: "무료 제공 여부만 기록하며 접근 절차는 별도 주장에 둔다."
+
+- id: ste.issue-9.copy-access
+  claim: "ASD-STE100 Issue 9 공식 사본은 STEMG 요청 양식으로 신청한다."
+  status: verified
+  source_ids: [asd-ste-downloads]
+  checked_on: "2026-08-08"
+  notes: "요청 절차는 사본의 재배포 권한을 뜻하지 않는다."
+
+- id: ste.tools.writer-limit
+  claim: "STEMG는 검사 도구가 STE 작성자를 대체할 수 없다고 명시한다."
+  status: verified
+  source_ids: [asd-ste-tools]
+  checked_on: "2026-08-08"
+  notes: "작성자 대체 한계만 기록한다."
+
+- id: ste.tools.standard-limit
+  claim: "STEMG는 검사 도구가 ASD-STE100 표준 자체를 대체할 수 없다고 명시한다."
+  status: verified
+  source_ids: [asd-ste-tools]
+  checked_on: "2026-08-08"
+  notes: "표준 대체 한계만 기록한다."
+
+- id: ste.tools.automation-limit
+  claim: "STEMG는 모든 STE 규칙을 자동으로 검사할 수 있는 것은 아니라고 명시한다."
+  status: verified
+  source_ids: [asd-ste-tools]
+  checked_on: "2026-08-08"
+  notes: "자동 검사 범위의 한계만 기록한다."
+
+- id: ste.history.first-guide
+  claim: "AECMA Simplified English Guide의 첫 발행 연도는 1986년이다."
+  status: verified
+  source_ids: [asd-ste-home, asd-ste-about]
+  checked_on: "2026-08-08"
+  notes: "두 STEMG 공식 페이지가 1986년을 명시한다."
+
+- id: ste.history.ata-100-year
+  claim: "ASD-STE100이 ATA 100의 요구사항이 된 연도는 1987년이다."
+  status: contradicted
+  source_ids: [asd-ste-about]
+  checked_on: "2026-08-08"
+  notes: "기존 HANDOFF의 1987년과 달리 STEMG 공식 연혁은 1986년이라고 명시한다."
+
+- id: korean.hong-kim.translation-direction
+  claim: "Hong과 Kim(2008)의 Controlled Korean 연구는 한국어에서 영어로의 기계번역을 대상으로 한다."
+  status: verified
+  source_ids: [hong-kim-2008]
+  checked_on: "2026-08-08"
+  notes: "다른 번역 방향으로 일반화하지 않는다."
+
+- id: korean.hong-kim.application-domain
+  claim: "Hong과 Kim(2008)의 Controlled Korean 적용 시나리오는 영어 학술문서 작성이다."
+  status: verified
+  source_ids: [hong-kim-2008]
+  checked_on: "2026-08-08"
+  notes: "일반 기술문서 전체나 안전 문서로 범위를 넓히지 않는다."
+
+- id: korean.hong-kim.review-pair-count
+  claim: "Hong과 Kim(2008)은 한국어-영어 기계번역 쌍 40,000개를 수작업으로 평가했다."
+  status: verified
+  source_ids: [hong-kim-2008]
+  checked_on: "2026-08-08"
+  notes: "초기 오류 분석 자료의 크기이다."
+
+- id: korean.hong-kim.error-type-count
+  claim: "Hong과 Kim(2008)은 번역 성능에 영향을 주는 빈번한 쓰기 오류 유형 8개를 도출했다."
+  status: verified
+  source_ids: [hong-kim-2008]
+  checked_on: "2026-08-08"
+  notes: "오류 유형 수만 기록한다."
+
+- id: korean.hong-kim.sentences-per-type
+  claim: "Hong과 Kim(2008)의 재작성 실험은 오류 유형마다 50문장을 사용했다."
+  status: verified
+  source_ids: [hong-kim-2008]
+  checked_on: "2026-08-08"
+  notes: "체커가 탐지한 경우에만 문장을 고쳤다."
+
+- id: korean.hong-kim.mt-result
+  claim: "Hong과 Kim(2008)의 대상 시스템에서 Controlled Korean Checker 적용 뒤 한국어-영어 번역 정확도는 전체 4.25% 향상되었다."
+  status: verified
+  source_ids: [hong-kim-2008]
+  checked_on: "2026-08-08"
+  notes: "대상 시스템의 결과이며 일반 가독성이나 안전성 효과가 아니다."
+
+- id: korean.hong-kim.design-language-properties
+  claim: "Hong과 Kim(2008)은 Controlled Korean 설계에 한국어의 언어적 특성을 반영해야 한다고 결론 내렸다."
+  status: verified
+  source_ids: [hong-kim-2008]
+  checked_on: "2026-08-08"
+  notes: "대상 MT 시스템 고려 여부는 별도 주장에 둔다."
+
+- id: korean.hong-kim.design-mt-system
+  claim: "Hong과 Kim(2008)은 Controlled Korean 설계에 대상 기계번역 시스템의 특성을 반영해야 한다고 결론 내렸다."
+  status: verified
+  source_ids: [hong-kim-2008]
+  checked_on: "2026-08-08"
+  notes: "한국어의 언어적 특성 고려 여부는 별도 주장에 둔다."
+
+- id: korean.ryu-im-jeong.lexicon-model
+  claim: "류수린·임병화·정동규(2008)는 한국어 기술문서용 통제 어휘부 모형을 제안했다."
+  status: verified
+  source_ids: [ryu-im-jeong-2008]
+  checked_on: "2026-08-08"
+  notes: "PDF 원문의 첫 저자 표기 `류수린`을 따른다."
+
+- id: korean.ryu-im-jeong.grammar-model
+  claim: "류수린·임병화·정동규(2008)는 한국어 기술문서용 통제 문법부 모형을 제안했다."
+  status: verified
+  source_ids: [ryu-im-jeong-2008]
+  checked_on: "2026-08-08"
+  notes: "어휘부 모형은 별도 주장에 둔다."
+
+- id: korean.ryu-im-jeong.validation-limit
+  claim: "류수린·임병화·정동규(2008)의 제안 규칙은 충분한 한국어 데이터로 검증된 상태가 아니다."
+  status: verified
+  source_ids: [ryu-im-jeong-2008]
+  checked_on: "2026-08-08"
+  notes: "논문 결론이 직접 명시한 한계이다."
+
+- id: korean.im-nam.document-count
+  claim: "임병화·남유선(2009)의 말뭉치는 한국어 기술문서 316개로 구성되었다."
+  status: verified
+  source_ids: [im-nam-2009]
+  checked_on: "2026-08-08"
+  notes: "문서 수만 기록한다."
+
+- id: korean.im-nam.conditional-instance-count
+  claim: "임병화·남유선(2009)의 조건 부사어 빈도표 합계는 5,280건이다."
+  status: verified
+  source_ids: [im-nam-2009]
+  checked_on: "2026-08-08"
+  notes: "논문은 연구 대상 문장을 별도로 약 5,000개라고도 설명한다."
+
+- id: korean.im-nam.translation-route
+  claim: "임병화·남유선(2009)은 한국어 원문을 영어를 거쳐 독일어로 번역하는 경로를 분석했다."
+  status: verified
+  source_ids: [im-nam-2009]
+  checked_on: "2026-08-08"
+  notes: "번역 경로만 기록한다."
+
+- id: korean.im-nam.search-tool
+  claim: "임병화·남유선(2009)은 조건 부사어 검색에 한마루 직접검색기 1.0을 사용했다."
+  status: verified
+  source_ids: [im-nam-2009]
+  checked_on: "2026-08-08"
+  notes: "검색 도구만 기록한다."
+
+- id: korean.im-nam.ko-en-mt-tool
+  claim: "임병화·남유선(2009)은 한국어-영어 번역에 Notii를 사용했다."
+  status: verified
+  source_ids: [im-nam-2009]
+  checked_on: "2026-08-08"
+  notes: "첫 번째 번역 도구만 기록한다."
+
+- id: korean.im-nam.en-de-mt-tool
+  claim: "임병화·남유선(2009)은 영어-독일어 번역에 SYSTRANet을 사용했다."
+  status: verified
+  source_ids: [im-nam-2009]
+  checked_on: "2026-08-08"
+  notes: "두 번째 번역 도구만 기록한다."
+
+- id: korean.im-nam.gyeongu-form-rule
+  claim: "임병화·남유선(2009)은 조건절에서 `경우` 또는 `경우에`를 사용하라고 제안했다."
+  status: verified
+  source_ids: [im-nam-2009]
+  checked_on: "2026-08-08"
+  notes: "논문 결론의 첫 번째 조건 부사어 규칙이다."
+
+- id: korean.im-nam.gyeongu-particle-rule
+  claim: "임병화·남유선(2009)은 `경우`에 `은/는·만·도`를 붙일 때 부사격 조사 `에`를 함께 쓰라고 제안했다."
+  status: verified
+  source_ids: [im-nam-2009]
+  checked_on: "2026-08-08"
+  notes: "특수조사 결합 규칙만 기록한다."
+
+- id: korean.im-nam.redundant-expression-rule
+  claim: "임병화·남유선(2009)은 `경우에` 뒤의 불필요한 잉여 표현을 피하라고 제안했다."
+  status: verified
+  source_ids: [im-nam-2009]
+  checked_on: "2026-08-08"
+  notes: "논문은 `있다`, `대하다`, `한하다` 활용형을 예로 든다."
+
+- id: korean.im-nam.ryeomyeon-rule
+  claim: "임병화·남유선(2009)은 `-려면`을 목적과 조건 중 한 의미로 명확히 쓰라고 제안했다."
+  status: verified
+  source_ids: [im-nam-2009]
+  checked_on: "2026-08-08"
+  notes: "목적·조건 중의성에 관한 한 규칙이다."
+
+- id: korean.im-nam.duplicate-marker-rule
+  claim: "임병화·남유선(2009)은 조건 부사어에서 `경우라면` 사용을 피하라고 제안했다."
+  status: verified
+  source_ids: [im-nam-2009]
+  checked_on: "2026-08-08"
+  notes: "`경우`와 `-면` 중 하나만 선택하라는 제안이다."
+
+- id: korean.choi-choi.material-source
+  claim: "최지영·최명원(2008)은 제품 사용 설명서 등에서 추출한 문장을 설문 자료로 사용했다."
+  status: verified
+  source_ids: [choi-choi-2008]
+  checked_on: "2026-08-08"
+  notes: "문장 단위 자료의 출처만 기록한다."
+
+- id: korean.choi-choi.first-survey-item-count
+  claim: "최지영·최명원(2008)의 1차 설문은 176문항으로 구성되었다."
+  status: verified
+  source_ids: [choi-choi-2008]
+  checked_on: "2026-08-08"
+  notes: "1차 설문의 문항 수만 기록한다."
+
+- id: korean.choi-choi.first-survey-participant-count
+  claim: "최지영·최명원(2008)의 1차 설문 참가자는 40명이었다."
+  status: verified
+  source_ids: [choi-choi-2008]
+  checked_on: "2026-08-08"
+  notes: "1차 설문의 참가자 수만 기록한다."
+
+- id: korean.choi-choi.second-survey-item-count
+  claim: "최지영·최명원(2008)의 2차 설문은 16문항으로 구성되었다."
+  status: verified
+  source_ids: [choi-choi-2008]
+  checked_on: "2026-08-08"
+  notes: "2차 설문의 문항 수만 기록한다."
+
+- id: korean.choi-choi.second-survey-participant-count
+  claim: "최지영·최명원(2008)의 2차 설문 참가자는 19명이었다."
+  status: verified
+  source_ids: [choi-choi-2008]
+  checked_on: "2026-08-08"
+  notes: "2차 설문의 참가자 수만 기록한다."
+
+- id: korean.choi-choi.second-survey-rewrite
+  claim: "최지영·최명원(2008)은 2차 설문에서 선택 문항의 `-ㅂ니다`를 `-ㅂ시오`로 바꾸었다."
+  status: verified
+  source_ids: [choi-choi-2008]
+  checked_on: "2026-08-08"
+  notes: "2차 설문의 조작만 기록한다."
+
+- id: korean.choi-choi.sipsio-directive-rate
+  claim: "최지영·최명원(2008)의 1차 설문에서 `-ㅂ시오`형의 지시화행 판별률은 88.6%였다."
+  status: verified
+  source_ids: [choi-choi-2008]
+  checked_on: "2026-08-08"
+  notes: "`-ㅂ시오`형 결과만 기록한다."
+
+- id: korean.choi-choi.seumnida-directive-rate
+  claim: "최지영·최명원(2008)의 1차 설문에서 `-ㅂ니다`형의 지시화행 판별률은 36.3%였다."
+  status: verified
+  source_ids: [choi-choi-2008]
+  checked_on: "2026-08-08"
+  notes: "`-ㅂ니다`형 결과만 기록한다."
+
+- id: korean.kwon-nam-hong.scope
+  claim: "권민재·남유선·홍우평(2008)은 기술 커뮤니케이션의 통제언어 개발 사례와 특성을 검토했다."
+  status: verified
+  source_ids: [kwon-nam-hong-2008]
+  checked_on: "2026-08-08"
+  notes: "해당 논문의 연구 범위만 기록한다."
+
+- id: korean.ham-ryu.scope
+  claim: "함수진·류수린(2010)은 한국어-일본어 기술문서 기계번역을 위한 통제언어 규칙을 연구했다."
+  status: verified
+  source_ids: [ham-ryu-2010]
+  checked_on: "2026-08-08"
+  notes: "해당 논문의 연구 범위만 기록한다."
+
+- id: ets.v0.corpus-basis
+  claim: "Gobbi의 2014년 ETS 시제품은 코퍼스 기반으로 개발되었다."
+  status: verified
+  source_ids: [gobbi-2014-thesis]
+  checked_on: "2026-08-08"
+  notes: "개발 방법만 기록한다."
+
+- id: ets.v0.rules-component
+  claim: "Gobbi의 2014년 ETS 시제품에는 쓰기·문체 규칙 부분이 있다."
+  status: verified
+  source_ids: [gobbi-2014-thesis]
+  checked_on: "2026-08-08"
+  notes: "사전 부분은 별도 주장에 둔다."
+
+- id: ets.v0.dictionary-component
+  claim: "Gobbi의 2014년 ETS 시제품에는 제한된 표제어의 사전 부분이 있다."
+  status: verified
+  source_ids: [gobbi-2014-thesis]
+  checked_on: "2026-08-08"
+  notes: "규칙 부분은 별도 주장에 둔다."
+
+- id: ets.v0.version-label
+  claim: "Gobbi의 2014년 학위논문에 수록된 ETS 가이드는 `Versión 0`으로 표시되어 있다."
+  status: verified
+  source_ids: [gobbi-2014-thesis]
+  checked_on: "2026-08-08"
+  notes: "2015년 상용판과 2026년 2.0에 이 버전 표시를 적용하지 않는다."
+
+- id: ets.v0.publication-year
+  claim: "ETS `Versión 0`을 수록한 Gobbi의 학위논문은 2014년에 발행되었다."
+  status: verified
+  source_ids: [gobbi-2014-thesis]
+  checked_on: "2026-08-08"
+  notes: "대학 기관 저장소의 서지와 심사일을 확인했다."
+
+- id: ets.v0.numbered-section-count
+  claim: "ETS `Versión 0`에서 번호가 부여된 규칙이 있는 섹션은 1–8의 8개이다."
+  status: verified
+  source_ids: [gobbi-2014-thesis]
+  checked_on: "2026-08-08"
+  notes: "섹션 9는 나중에 정의할 항목이므로 번호 규칙 계수에서 제외했다."
+
+- id: ets.v0.rule-count
+  claim: "ETS `Versión 0`의 섹션 1–8에는 번호가 부여된 규칙 59개가 있다."
+  status: verified
+  source_ids: [gobbi-2014-thesis]
+  checked_on: "2026-08-08"
+  notes: "논문 목차의 섹션별 범위 17+2+6+5+5+8+6+10을 합산했다. 2.0에 적용하지 않는다."
+
+- id: ets.v0.section-9-status
+  claim: "ETS `Versión 0`의 섹션 9는 나중에 정의할 쓰기 실무 항목으로 남아 있다."
+  status: verified
+  source_ids: [gobbi-2014-thesis]
+  checked_on: "2026-08-08"
+  notes: "해당 섹션을 59개 규칙 계수에 포함하지 않는 근거이다."
+
+- id: ets.2015.publication-year
+  claim: "EUS의 상용 도서 `Guía de Español Técnico Simplificado`는 2015년에 발행되었다고 서점 카탈로그에 기록되어 있다."
+  status: secondary
+  source_ids: [ets-2015-catalog]
+  checked_on: "2026-08-08"
+  notes: "출판사 아카이브를 확보하지 못했으므로 2차 서지 상태를 유지한다."
+
+- id: ets.v2.publisher
+  claim: "Aracne는 Ilaria Gobbi의 Español Técnico Simplificado 2.0 인쇄본 출판사이다."
+  status: verified
+  source_ids: [ets-2-publisher]
+  checked_on: "2026-08-08"
+  notes: "출판 주체만 기록한다."
+
+- id: ets.v2.release-date
+  claim: "Español Técnico Simplificado 2.0의 출판사 명시 발행일은 2026-02-13이다."
+  status: verified
+  source_ids: [ets-2-publisher]
+  checked_on: "2026-08-08"
+  notes: "발행일만 기록한다."
+
+- id: ets.v2.print-isbn
+  claim: "Español Técnico Simplificado 2.0 인쇄본의 ISBN은 979-12-218-2466-7이다."
+  status: verified
+  source_ids: [ets-2-publisher]
+  checked_on: "2026-08-08"
+  notes: "인쇄본 ISBN만 기록한다."
+
+- id: ets.v2.ste-issue-basis
+  claim: "Español Técnico Simplificado 2.0은 ASD-STE100 Issue 9을 기반으로 한다."
+  status: verified
+  source_ids: [ets-2-publisher]
+  checked_on: "2026-08-08"
+  notes: "출판사 공개 소개문의 버전 기반만 기록한다."
+
+- id: ets.v2.rules-component
+  claim: "Español Técnico Simplificado 2.0은 쓰기 또는 번역 규칙 부분을 갖는다."
+  status: verified
+  source_ids: [ets-2-publisher]
+  checked_on: "2026-08-08"
+  notes: "정확한 규칙 수는 공개 소개에 없다."
+
+- id: ets.v2.dictionary-component
+  claim: "Español Técnico Simplificado 2.0은 통제 사전 부분을 갖는다."
+  status: verified
+  source_ids: [ets-2-publisher]
+  checked_on: "2026-08-08"
+  notes: "정확한 표제어 수는 공개 소개에 없다."
+
+- id: ets.v2.rule-count
+  claim: "Español Técnico Simplificado 2.0의 정확한 규칙 수가 공개 검증되었다."
+  status: unverified
+  source_ids: [ets-2-publisher]
+  checked_on: "2026-08-08"
+  notes: "출판사 공개 카탈로그는 정확한 규칙 수를 제시하지 않는다."
+
+- id: ets.v2.dictionary-size
+  claim: "Español Técnico Simplificado 2.0의 정확한 사전 표제어 수가 공개 검증되었다."
+  status: unverified
+  source_ids: [ets-2-publisher]
+  checked_on: "2026-08-08"
+  notes: "출판사 공개 카탈로그는 정확한 표제어 수를 제시하지 않는다."
+
+- id: its.ownership
+  claim: "COM&TEC은 Italiano Tecnico Semplificato의 개발 주체이다."
+  status: verified
+  source_ids: [its-official]
+  checked_on: "2026-08-08"
+  notes: "개발 주체만 기록한다."
+
+- id: its.first-book-release-date
+  claim: "COM&TEC은 ITS 종이책과 ePub 출간을 2016-11-02에 공지했다."
+  status: verified
+  source_ids: [its-comtec-2016]
+  checked_on: "2026-08-08"
+  notes: "공식 아카이브에 표시된 공지일이며 별도 판본 번호는 확인하지 못했다."
+
+- id: its.book-author
+  claim: "Ilaria Gobbi는 2016년 ITS 출간물의 저자이다."
+  status: verified
+  source_ids: [its-comtec-2016]
+  checked_on: "2026-08-08"
+  notes: "COM&TEC 공식 출간 공지가 저자를 명시한다."
+
+- id: its.rules-component
+  claim: "Italiano Tecnico Semplificato의 공식 구조에는 `Istruzioni Linguistiche` 부분이 있다."
+  status: verified
+  source_ids: [its-official-structure]
+  checked_on: "2026-08-08"
+  notes: "정확한 지침 수는 공식 공개 페이지에 없다."
+
+- id: its.dictionary-component
+  claim: "Italiano Tecnico Semplificato의 공식 구조에는 `Dizionario` 부분이 있다."
+  status: verified
+  source_ids: [its-official-structure]
+  checked_on: "2026-08-08"
+  notes: "사전 존재만 확인하며 정확한 표제어 수는 2차 자료와 분리한다."
+
+- id: its.page-count
+  claim: "Italiano Tecnico Semplificato 공식 저작물은 166쪽 구조로 안내된다."
+  status: verified
+  source_ids: [its-official-structure]
+  checked_on: "2026-08-08"
+  notes: "쪽수만 기록하며 지침이나 사전 내용은 복제하지 않는다."
+
+- id: its.rights.trademark-protection
+  claim: "Italiano Tecnico Semplificato는 등록 상표로 보호된다."
+  status: verified
+  source_ids: [its-official-structure]
+  checked_on: "2026-08-08"
+  notes: "상표 보호만 기록하며 저작권 보호는 별도 주장에 둔다."
+
+- id: its.rights.copyright-protection
+  claim: "Italiano Tecnico Semplificato 저작물은 저작권으로 보호된다."
+  status: verified
+  source_ids: [its-official-structure]
+  checked_on: "2026-08-08"
+  notes: "저작권 보호만 기록하며 공개 라이선스를 추론하지 않는다."
+
+- id: its.access.print-availability
+  claim: "Italiano Tecnico Semplificato는 종이 출판물로 제공된다."
+  status: verified
+  source_ids: [its-official-structure, its-comtec-2016]
+  checked_on: "2026-08-08"
+  notes: "종이 형식의 제공 여부만 기록하며 디지털 형식은 별도 주장에 둔다."
+
+- id: its.access.digital-availability
+  claim: "Italiano Tecnico Semplificato는 디지털 출판물로 제공된다."
+  status: verified
+  source_ids: [its-official-structure, its-comtec-2016]
+  checked_on: "2026-08-08"
+  notes: "디지털 형식의 제공 여부만 기록하며 종이 형식은 별도 주장에 둔다."
+
+- id: its.latest-version-label
+  claim: "Italiano Tecnico Semplificato의 현재 공개 판본 번호가 공식 사이트에서 확인되었다."
+  status: unverified
+  source_ids: [its-official, its-official-structure, its-comtec-2016]
+  checked_on: "2026-08-08"
+  notes: "공식 공개 페이지는 ITS와 출간물을 안내하지만 현재 판본 번호를 표시하지 않는다."
+
+- id: its.instruction-count
+  claim: "Italiano Tecnico Semplificato에는 53개 지침이 있다고 공개적으로 보고되었다."
+  status: secondary
+  source_ids: [its-free-edit]
+  checked_on: "2026-08-08"
+  notes: "Free Edit 설명은 예 53을 제시하지만 ITS 공식 공개 페이지에는 이 수치가 없다."
+
+- id: its.dictionary-size
+  claim: "Italiano Tecnico Semplificato에는 약 1,000개 기본 표제어가 있다고 공개적으로 보고되었다."
+  status: secondary
+  source_ids: [its-free-edit]
+  checked_on: "2026-08-08"
+  notes: "Free Edit 설명의 근삿값이며 ITS 공식 공개 페이지에서는 확인되지 않는다."
+
+- id: controlled-language.translation-cost
+  claim: "통제언어 도입으로 번역 비용이 30~40% 절감된다는 수치는 추적 가능한 1차 사례 연구로 입증되었다."
+  status: unverified
+  source_ids: []
+  checked_on: "2026-08-08"
+  notes: "검토한 1차·기관 자료에서 이 효과 크기를 직접 입증하는 사례를 찾지 못했다."
+
+- id: francais-rationalise.glossary-size
+  claim: "Français Rationalisé의 정확한 용어집 표제어 수가 공개 1차 자료로 검증되었다."
+  status: unverified
+  source_ids: [gobbi-2014-thesis, fr-le-bris-2016]
+  checked_on: "2026-08-08"
+  notes: "정확한 수를 뒷받침하는 GIFAS 원문 또는 기관 레코드를 아직 확보하지 못했다."
+
+- id: francais-rationalise.stewardship
+  claim: "GIFAS는 Français Rationalisé 가이드의 개발·관리 주체이다."
+  status: verified
+  source_ids: [gobbi-2014-thesis]
+  checked_on: "2026-08-08"
+  notes: "Bologna 학위논문의 GIFAS 개발 조직과 방법 분석에서 확인했다. Barthe 논문은 서지 메타데이터만 확인했으므로 내용 근거에서 제외했다."
+
+- id: francais-rationalise.first-guide-rules-year
+  claim: "Français Rationalisé 규칙은 1990년 GIFAS 가이드의 일부로 확인된다."
+  status: verified
+  source_ids: [gobbi-2014-thesis]
+  checked_on: "2026-08-08"
+  notes: "1996년 분리 규칙판과 1998년 독립 가이드는 후속 발행 단계이다."
+
+- id: francais-rationalise.second-edition-year
+  claim: "`Guide du Français Rationalisé` 제2판은 1999년판이다."
+  status: verified
+  source_ids: [gobbi-2014-thesis]
+  checked_on: "2026-08-08"
+  notes: "Bologna 학위논문 59–61쪽의 판본 분석에서 확인했다. Barthe 논문은 서지 메타데이터만 확인했으므로 판본 내용 근거에서 제외했다."
+
+- id: francais-rationalise.rules-component
+  claim: "`Guide du Français Rationalisé` 1999년 제2판은 `Règles d’écriture` 부분을 갖는다."
+  status: verified
+  source_ids: [gobbi-2014-thesis, fr-le-bris-2016]
+  checked_on: "2026-08-08"
+  notes: "규칙 원문은 복제하지 않고 구조만 기록한다."
+
+- id: francais-rationalise.glossary-component
+  claim: "`Guide du Français Rationalisé` 1999년 제2판은 `Glossaire` 부분을 갖는다."
+  status: verified
+  source_ids: [gobbi-2014-thesis, fr-le-bris-2016]
+  checked_on: "2026-08-08"
+  notes: "용어집 존재와 표제어 수는 별도 주장으로 관리한다."
+
+- id: francais-rationalise.section-count
+  claim: "`Guide du Français Rationalisé` 1999년 제2판의 쓰기 규칙은 7개 섹션으로 구성된다."
+  status: verified
+  source_ids: [gobbi-2014-thesis]
+  checked_on: "2026-08-08"
+  notes: "Bologna 학위논문 60–61쪽의 판본 분석에서 확인했다."
+
+- id: francais-rationalise.rule-count
+  claim: "`Guide du Français Rationalisé` 1999년 제2판에는 쓰기 규칙 50개가 있다."
+  status: verified
+  source_ids: [gobbi-2014-thesis]
+  checked_on: "2026-08-08"
+  notes: "Bologna 학위논문 61쪽과 이어지는 규칙표를 확인했다."
+
+- id: francais-rationalise.ste-rules-translated
+  claim: "Français Rationalisé는 프랑스어에 적용 가능한 AECMA Simplified English 규칙을 번역해 반영했다."
+  status: verified
+  source_ids: [gobbi-2014-thesis]
+  checked_on: "2026-08-08"
+  notes: "번역된 규칙의 존재만 기록하며 전체가 단순 번역이라고 하지 않는다."
+
+- id: francais-rationalise.ste-issue-1-basis
+  claim: "Français Rationalisé의 초기 규칙 모델은 AECMA Simplified English Issue 1에서 출발했다."
+  status: verified
+  source_ids: [gobbi-2014-thesis]
+  checked_on: "2026-08-08"
+  notes: "출발점만 기록하며 완성본을 단순 번역으로 보지 않는다."
+
+- id: francais-rationalise.ste-rules-adapted
+  claim: "Français Rationalisé는 프랑스어에 그대로 적용할 수 없는 AECMA Simplified English 규칙을 프랑스어에 맞게 수정했다."
+  status: verified
+  source_ids: [gobbi-2014-thesis]
+  checked_on: "2026-08-08"
+  notes: "언어 차이로 인한 적응 절차만 기록한다."
+
+- id: francais-rationalise.ste-rules-removed
+  claim: "Français Rationalisé 개발에서 일부 AECMA Simplified English 규칙은 제거되었다."
+  status: verified
+  source_ids: [gobbi-2014-thesis]
+  checked_on: "2026-08-08"
+  notes: "57개에서 50개로의 변화 분석에서 확인한 제거 여부만 기록한다."
+
+- id: francais-rationalise.new-rules-added
+  claim: "Français Rationalisé 개발에서 프랑스어용 규칙이 새로 추가되었다."
+  status: verified
+  source_ids: [gobbi-2014-thesis]
+  checked_on: "2026-08-08"
+  notes: "신규 규칙의 존재만 기록하며 보호된 규칙 문구는 복제하지 않는다."
+
+- id: oss.sourdough-checker.repository
+  claim: "sourdough-bread/asd-ste100-checker라는 canonical 공개 저장소가 존재한다."
+  status: verified
+  source_ids: [sourdough-checker-repo]
+  checked_on: "2026-08-09"
+  notes: "2026-08-09에 GitHub 저장소와 README, GitHub API 메타데이터를 직접 확인했다."
+
+- id: oss.sourdough-checker.maturity
+  claim: "sourdough-bread/asd-ste100-checker는 성숙한 구현 사례이다."
+  status: contradicted
+  source_ids: [sourdough-checker-repo]
+  checked_on: "2026-08-09"
+  notes: "저장소는 2026-07-24 생성이고 커밋 19개가 모두 생성 당일이며 발행된
+    릴리스가 없다. 구조·CI·테스트는 갖췄지만 성숙 판정은 직접 증거가 반박한다."
+
+- id: oss.sourdough-checker.checker
+  claim: "sourdough-bread/asd-ste100-checker는 ASD-STE100 검사기를 제공한다."
+  status: verified
+  source_ids: [sourdough-checker-repo]
+  checked_on: "2026-08-09"
+  notes: "README가 결정론적 엔진 기반 검사기와 CLI 사용법(JSON 출력)을 명시한다."
+
+- id: oss.sourdough-checker.mcp
+  claim: "sourdough-bread/asd-ste100-checker는 MCP 인터페이스를 제공한다."
+  status: verified
+  source_ids: [sourdough-checker-repo]
+  checked_on: "2026-08-09"
+  notes: "README의 네 표면 중 MCP server(stdio 또는 HTTP/SSE FastMCP)를 확인했다."
+
+- id: oss.sourdough-checker.lsp
+  claim: "sourdough-bread/asd-ste100-checker는 LSP 인터페이스를 제공한다."
+  status: verified
+  source_ids: [sourdough-checker-repo]
+  checked_on: "2026-08-09"
+  notes: "README의 네 표면 중 진단 전용 LSP를 확인했다."
+
+- id: oss.sourdough-checker.agent-skill
+  claim: "sourdough-bread/asd-ste100-checker는 agent skill을 제공한다."
+  status: verified
+  source_ids: [sourdough-checker-repo]
+  checked_on: "2026-08-09"
+  notes: "README의 네 표면 중 자체 로직이 없는 agent skill 워크플로를 확인했다."
+
+- id: oss.sourdough-checker.license
+  claim: "sourdough-bread/asd-ste100-checker의 코드는 Apache-2.0 라이선스로 배포된다."
+  status: verified
+  source_ids: [sourdough-checker-repo]
+  checked_on: "2026-08-09"
+  notes: "LICENSE 파일, 저장소 사이드바, GitHub API의 라이선스 표기가 일치한다."
+
+- id: oss.sourdough-checker.derived-dictionary
+  claim: "sourdough-bread/asd-ste100-checker는 ASD-STE100 Issue 9 PDF에서 추출한
+    사전·규칙 JSON을 저장소에 커밋한다."
+  status: verified
+  source_ids: [sourdough-checker-repo]
+  checked_on: "2026-08-09"
+  notes: "README가 추출 출처와 재배포 위험 감수 문구를 명시한다. 파생 통제 사전을
+    커밋하지 않는 KSTL 정책과 대비되는 선례로 기록한다."
+
+- id: oss.sourdough-checker.no-release
+  claim: "2026-08-09 기준 sourdough-bread/asd-ste100-checker에는 발행된 GitHub
+    릴리스가 없다."
+  status: verified
+  source_ids: [sourdough-checker-repo]
+  checked_on: "2026-08-09"
+  notes: "GitHub releases API가 빈 목록을 반환한다. README의 PyPI·Docker 문구는
+    태그 시 발행 계획이며 실제 배포 확인이 아니다."
+
+- id: korean.nikl.plain-language-guideline-2021
+  claim: "국립국어원은 2021년 「행정문서 표현 개선 및 쉬운 공공언어 쓰기 지침
+    개발」 연구 보고서를 발간했다."
+  status: verified
+  source_ids: [nikl-plain-language-guideline-2021]
+  checked_on: "2026-08-09"
+  notes: "공식 레코드의 펴낸 곳·펴낸 때와 목차 Ⅲ장(쉬운 공공언어 쓰기 지침
+    개발)을 확인했다. 연구책임자는 정희창이다."
+
+- id: korean.nikl.easy-public-doc-guide
+  claim: "문화체육관광부 국립국어원은 『쉬운 공문서 쓰기 길잡이』를 공개 배포한다."
+  status: verified
+  source_ids: [nikl-easy-public-doc-guide]
+  checked_on: "2026-08-09"
+  notes: "공식 게시물의 제목·담당부서(공공언어과)·첨부 PDF 링크를 확인했다."
+
+- id: korean.nikl.easy-public-doc-guide-license
+  claim: "『쉬운 공문서 쓰기 길잡이』 게시물에는 공공누리
+    제3유형(출처표시·변경금지) 표시가 있다."
+  status: verified
+  source_ids: [nikl-easy-public-doc-guide]
+  checked_on: "2026-08-09"
+  notes: "게시물의 공공누리 표시 문구를 그대로 확인했다. PDF 내부의 표시는
+    검증하지 않았다."
+
+- id: korean.moleg.easy-law-standards
+  claim: "법제처는 「알기 쉬운 법령 정비기준」 판본들을 공식 자료실에서 공개한다."
+  status: verified
+  source_ids: [moleg-easy-law-standards]
+  checked_on: "2026-08-09"
+  notes: "자료실 목록에서 제5판(2013-01-23)부터 제10판(수정증보판)(2026-01-22)
+    까지 61건 등재를 확인했다. 개별 판본 내용은 검토하지 않았다."
+
+- id: oss.im-not-ai.repository
+  claim: "epoko77-ai/im-not-ai라는 공개 저장소가 존재한다."
+  status: verified
+  source_ids: [im-not-ai-repo]
+  checked_on: "2026-08-09"
+  notes: "2026-08-09에 GitHub 저장소와 README를 직접 확인했다."
+
+- id: oss.im-not-ai.purpose
+  claim: "epoko77-ai/im-not-ai는 AI가 생성한 한국어 문장을 자연스러운 사람
+    문체로 재작성하는 Claude Code 스킬을 제공한다."
+  status: verified
+  source_ids: [im-not-ai-repo]
+  checked_on: "2026-08-09"
+  notes: "README가 한국어 전용 재작성 스킬과 처리 경로를 설명한다. 통제언어
+    표준이 아니라 문체 자연화 도구이다."
+
+- id: oss.im-not-ai.rule-format
+  claim: "epoko77-ai/im-not-ai는 재작성 규칙을 분류 ID와 심각도 등급을 붙인
+    구조화된 마크다운 문서로 관리한다."
+  status: verified
+  source_ids: [im-not-ai-repo]
+  checked_on: "2026-08-09"
+  notes: "README가 10개 범주와 70개 서브 패턴(검증 보류 1건 별도), 심각도
+    S1–S3의 참조 문서 구조를 설명한다."
+
+- id: oss.im-not-ai.license
+  claim: "epoko77-ai/im-not-ai는 MIT 라이선스로 배포된다."
+  status: verified
+  source_ids: [im-not-ai-repo]
+  checked_on: "2026-08-09"
+  notes: "저장소 라이선스 표기를 확인했다."
