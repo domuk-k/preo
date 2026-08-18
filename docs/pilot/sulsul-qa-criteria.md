@@ -99,7 +99,8 @@ sulsul이 깨뜨린 것이다.
 기법의 원전과 번역 QA 대응은
 [Redish·xl8 리서치](redish-xl8-research.md)에 있다. 요약: 설명은
 바꿔 말하기, 말투는 plus–minus, 절차는 과업 시험. Adequacy와 Fluency는
-한 점수로 합치지 않는다.
+한 점수로 합치지 않는다. 칸별 판정자(기계·에이전트·사람)는
+[preo QA 매트릭스](preo-qa-matrix.md)다.
 
 ## 한 라운드 최소 구성
 
