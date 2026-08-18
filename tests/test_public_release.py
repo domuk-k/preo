@@ -35,6 +35,7 @@ def test_license_policy_maps_code_and_project_content_without_pending_terms() ->
     assert "research/" in policy
     assert "schemas/" in policy
     assert "standard/" in policy
+    assert "skills/" in policy
     assert "비완전" in policy
     assert "저작권" in policy
     assert "면책" in policy

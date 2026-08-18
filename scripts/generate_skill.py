@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""standard/rules/candidates.yaml에서 skill/preo/ 산출물을 생성한다.
+"""standard/rules/candidates.yaml에서 skills/preo/ 산출물을 생성한다.
 
 결정론적이다: 같은 입력에서 byte 동일 출력을 낸다. 타임스탬프를 쓰지 않는다.
 --check는 디스크의 산출물이 최신 생성 결과와 일치하는지 검사한다(불일치 시 1).
@@ -15,8 +15,8 @@ import yaml
 
 ROOT = Path(__file__).resolve().parents[1]
 RULES_PATH = ROOT / "standard" / "rules" / "candidates.yaml"
-SKILL_MD = ROOT / "skill" / "preo" / "SKILL.md"
-RULES_MD = ROOT / "skill" / "preo" / "references" / "rules.md"
+SKILL_MD = ROOT / "skills" / "preo" / "SKILL.md"
+RULES_MD = ROOT / "skills" / "preo" / "references" / "rules.md"
 
 SKILL_VERSION = "0.2.0"
 STATS_PATH = "~/.preo/stats.jsonl"

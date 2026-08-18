@@ -4,5 +4,5 @@
   "description": "Use when rewriting Korean README, guide, or API docs. 풀어줘 / 검사만 해줘 / 풀어로 써줘.",
   "author": { "name": "preo" },
   "homepage": "https://github.com/domuk-k/preo",
-  "skills": ["./skill/preo"]
+  "skills": ["./skills/preo"]
 }

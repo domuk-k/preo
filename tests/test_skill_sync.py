@@ -2,14 +2,22 @@
 
 import importlib.util
 import json
+import re
 from pathlib import Path
 
 import pytest
 import yaml
 
 ROOT = Path(__file__).resolve().parents[1]
-SKILL_MD_PATH = ROOT / "skill" / "preo" / "SKILL.md"
-RULES_MD_PATH = ROOT / "skill" / "preo" / "references" / "rules.md"
+SKILL_MD_PATH = ROOT / "skills" / "preo" / "SKILL.md"
+RULES_MD_PATH = ROOT / "skills" / "preo" / "references" / "rules.md"
+NAME_PATTERN = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
+DESCRIPTION_WORKFLOW_PHRASES = (
+    "기본 경로",
+    "끝난 때",
+    "한 줄로 바꿔 말한다",
+    "문장마다 잠근다",
+)
 PLUGIN_JSON_PATH = ROOT / ".claude-plugin" / "plugin.json"
 MARKETPLACE_JSON_PATH = ROOT / ".claude-plugin" / "marketplace.json"
 
@@ -86,13 +94,22 @@ def test_skill_md_render_puts_meaning_before_fluency_and_forbids_scores(gen, rul
     assert "출력 형식에 그 칸이 없다" in text
     assert "BLEU" in text
     assert "이해되는지 봐줘" in text
+    assert "걸린 규칙 ID만" in text
     assert "전수 읽지" not in text
     assert "고치기 전에 [references/rules.md](references/rules.md)를" not in text
 
 
 def test_skill_md_render_has_write_mode_with_exp_rules_in_fix_table(gen, rules):
     text = gen.render_skill_md(*gen.partition_rules(rules))
+    assert "## 잠금" in text
+    assert "## 고치기" in text
+    assert "## 검사만" in text
     assert "## 쓰기" in text
+    lock_at = text.index("## 잠금")
+    rewrite_at = text.index("## 고치기")
+    inspect_at = text.index("## 검사만")
+    write_at = text.index("## 쓰기")
+    assert lock_at < rewrite_at < inspect_at < write_at
     fix_section = text.split("## 고침 규칙")[1].split("## 질문 게이트")[0]
     for n in range(1, 7):
         assert f"KSTL-EXP-00{n}" in fix_section
@@ -105,6 +122,9 @@ def test_description_is_use_when_only(gen, rules):
     assert desc.startswith("Use when")
     assert "뜻 보존을 읽힘보다" not in desc
     assert "한글 이름은" not in desc
+    for phrase in DESCRIPTION_WORKFLOW_PHRASES:
+        assert phrase not in desc
+    assert len(desc) <= 1024
     assert len(desc) <= 500
 
 
@@ -118,8 +138,8 @@ def test_skill_md_has_when_not_and_common_mistakes(gen, rules):
 
 
 def test_generated_files_exist_and_match_generator_output(gen):
-    assert SKILL_MD_PATH.exists(), "skill/preo/SKILL.md가 없다"
-    assert RULES_MD_PATH.exists(), "skill/preo/references/rules.md가 없다"
+    assert SKILL_MD_PATH.exists(), "skills/preo/SKILL.md가 없다"
+    assert RULES_MD_PATH.exists(), "skills/preo/references/rules.md가 없다"
     assert gen.generate(check=True) == 0, (
         "생성물이 candidates.yaml과 어긋난다. "
         "uv run python scripts/generate_skill.py를 실행할 것"
@@ -129,7 +149,11 @@ def test_generated_files_exist_and_match_generator_output(gen):
 def test_skill_md_frontmatter_declares_name_and_version(gen):
     frontmatter = yaml.safe_load(SKILL_MD_PATH.read_text(encoding="utf-8").split("---")[1])
     assert frontmatter["name"] == "preo"
+    assert NAME_PATTERN.fullmatch(frontmatter["name"])
     assert frontmatter["version"] == gen.SKILL_VERSION
+    desc = " ".join(frontmatter["description"].split())
+    assert desc.startswith("Use when")
+    assert len(desc) <= 1024
 
 
 def test_plugin_manifest_matches_skill_frontmatter(gen):
@@ -137,7 +161,7 @@ def test_plugin_manifest_matches_skill_frontmatter(gen):
     frontmatter = yaml.safe_load(SKILL_MD_PATH.read_text(encoding="utf-8").split("---")[1])
     assert plugin["name"] == frontmatter["name"] == "preo"
     assert plugin["version"] == frontmatter["version"] == gen.SKILL_VERSION
-    assert plugin["skills"] == ["./skill/preo"]
+    assert plugin["skills"] == ["./skills/preo"]
 
 
 def test_marketplace_manifest_serves_preo_at_preo():

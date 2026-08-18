@@ -26,6 +26,7 @@ The following paths are licensed under the
 - `docs/`
 - `research/`
 - `schemas/`
+- `skills/`
 - `standard/`
 - this licensing policy
 
