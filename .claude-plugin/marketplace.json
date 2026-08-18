@@ -5,7 +5,7 @@
     {
       "name": "preo",
       "source": "./",
-      "description": "한국어 기술문서의 꼬인 문장을 푸는 스킬. 한글 이름은 풀어."
+      "description": "Use when rewriting Korean README, guide, or API docs. 풀어줘 / 검사만 해줘 / 풀어로 써줘."
     }
   ]
 }

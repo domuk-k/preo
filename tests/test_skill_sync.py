@@ -58,15 +58,14 @@ def test_skill_md_render_contains_all_rule_ids_and_notice(gen, rules):
     for rule in rules:
         assert rule["id"] in text
     assert "candidate" in text
-    assert "https://github.com/domuk-k/preo" in text
-    assert "~/.claude/preo/stats.jsonl" in text
-    assert "기록하지 않는다" in text
+    assert "~/.preo/stats.jsonl" in text
+    assert "문서 내용" in text
 
 
 def test_skill_md_render_gates_human_rules(gen, rules):
     text = gen.render_skill_md(*gen.partition_rules(rules))
-    fix_section = text.split("## 고침 규칙")[1].split("## 질문 게이트 규칙")[0]
-    gate_section = text.split("## 질문 게이트 규칙")[1].split("## 통계")[0]
+    fix_section = text.split("## 고침 규칙")[1].split("## 질문 게이트")[0]
+    gate_section = text.split("## 질문 게이트")[1].split("## 실수")[0]
     for rule_id in HUMAN_RULE_IDS:
         assert rule_id not in fix_section
         assert rule_id in gate_section
@@ -82,20 +81,40 @@ def test_rules_md_render_contains_examples_and_guidance(gen, rules):
 
 def test_skill_md_render_puts_meaning_before_fluency_and_forbids_scores(gen, rules):
     text = gen.render_skill_md(*gen.partition_rules(rules))
-    assert "뜻을 읽힘보다 앞에" in text
-    assert "바꿔 말한다" in text
+    assert "한 줄로 바꿔 말한다" in text
     assert "Accuracy" in text
-    assert "부분 점수를 주지 않는다" in text
+    assert "출력 형식에 그 칸이 없다" in text
     assert "BLEU" in text
     assert "이해되는지 봐줘" in text
+    assert "전수 읽지" not in text
+    assert "고치기 전에 [references/rules.md](references/rules.md)를" not in text
 
 
 def test_skill_md_render_has_write_mode_with_exp_rules_in_fix_table(gen, rules):
     text = gen.render_skill_md(*gen.partition_rules(rules))
-    assert "## 쓰기 모드" in text
-    fix_section = text.split("## 고침 규칙")[1].split("## 질문 게이트 규칙")[0]
+    assert "## 쓰기" in text
+    fix_section = text.split("## 고침 규칙")[1].split("## 질문 게이트")[0]
     for n in range(1, 7):
         assert f"KSTL-EXP-00{n}" in fix_section
+
+
+def test_description_is_use_when_only(gen, rules):
+    text = gen.render_skill_md(*gen.partition_rules(rules))
+    frontmatter = yaml.safe_load(text.split("---")[1])
+    desc = " ".join(frontmatter["description"].split())
+    assert desc.startswith("Use when")
+    assert "뜻 보존을 읽힘보다" not in desc
+    assert "한글 이름은" not in desc
+    assert len(desc) <= 500
+
+
+def test_skill_md_has_when_not_and_common_mistakes(gen, rules):
+    text = gen.render_skill_md(*gen.partition_rules(rules))
+    assert "## 쓰지 않을 때" in text
+    assert "## 실수" in text
+    assert "humanize" in text
+    body = text.split("---", 2)[2]
+    assert len(body.split()) < 600
 
 
 def test_generated_files_exist_and_match_generator_output(gen):
