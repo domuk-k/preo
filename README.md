@@ -1,9 +1,5 @@
 # preo
 
-<p align="center">
-  <img src="assets/logo.png" width="160" alt="preo, 풀어">
-</p>
-
 <p align="center"><em>말은 없다. 한 문장 고친다. 읽힌다.</em></p>
 
 한국어 기술문서의 꼬인 문장을 풉니다. 규칙은 후보입니다.
