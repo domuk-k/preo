@@ -83,6 +83,16 @@ def test_k8s_inspect_report_is_inspect_only() -> None:
     assert "KSTL-DOC-001" in text
 
 
+def test_k8s_inspect_does_not_autofail_synonym_or_nonsafety_admonition() -> None:
+    text = K8S_INSPECT.read_text(encoding="utf-8")
+    assert "KSTL-DOC-001, KSTL-TER-001" not in text
+    assert "KSTL-SAF-001, KSTL-SYN-002" not in text
+    assert "- KSTL-SAF-001 ×" not in text
+    assert "불명" in text and "TER-001" in text
+    assert "패키지" in text
+    assert "비적용" in text or "안전 위험" in text
+
+
 def test_every_rule_has_example_pair_and_invariant() -> None:
     rules = yaml.safe_load(RULES_YAML.read_text(encoding="utf-8"))
     assert len(rules) == 16

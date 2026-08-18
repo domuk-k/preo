@@ -35,7 +35,7 @@
 | A4 | 코드·명령·URL·경로·숫자·단위 | 전 분기 | byte 동일 | ● | △ | — | [k8s 발췌](fixtures/k8s-kubeadm-install.excerpt.md) 토큰 잠금 |
 | A5 | 점수·등급·BLEU 칸이 없다 | 전 분기 | 그 문자열이 출력 형식에 없음 | ● | — | — | `test_skill_sync` + `test_qa_fixtures` |
 | A6 | 규칙 상세는 걸린 ID만 연다 | 전 분기 | 전수 로드 지시가 없음 | ● | — | — | `test_skill_sync` |
-| A7 | 게이트 규칙은 고치지 않고 묻는다 | 고치기 | SYN-002·REF-001·SAF-001은 질문 | — | ● | ● | kubeadm 경고 3문장에서 SAF-001·SYN-002 질문 |
+| A7 | 게이트 규칙은 고치지 않고 묻는다 | 고치기 | SYN-002·REF-001·SAF-001은 질문 | — | ● | ● | kubeadm cgroup에서 SYN-002 질문. 패키지 hold는 SAF 비적용 |
 | A8 | 출력 끝줄 형식 | 고치기, 쓰기 | `뜻 유지 · ID ×N` / `이미 읽힘 · 0곳` / `적용: …` | ● | △ | — | 스킬 계약 테스트. 리허설은 검사 트레일러 |
 
 ### B. 의미 — 층 0 / MQM Accuracy
@@ -89,8 +89,8 @@ MQM-lite: Accuracy · Terminology · Style · Conventions · Audience · Markup.
 |---|---|---|---|
 | F1 | 설명문 | 기본 표본 | FastAPI 발췌 |
 | F2 | 절차문 | DOC-001, SYN-003 | kubeadm 발췌 9·12·13. SYN-003은 아직 없음 |
-| F3 | 경고문 | SAF-001 | kubeadm 발췌 10·11·14 |
-| F4 | 게이트 발동 | SYN-002, REF-001 | SAF-001·SYN-002 질문. REF-001은 아직 없음 |
+| F3 | 경고문 | SAF-001 | kubeadm 10·11·14는 주의 상자. 안전 위험 아니라 SAF 비적용 |
+| F4 | 게이트 발동 | SYN-002, REF-001 | SYN-002 질문. TER-001은 불명. REF-001은 FastAPI 6 |
 | F5 | AI 초안 | 정탐이 나오는 자리 | 이번 표본은 공식 번역문 |
 
 장르를 한 숫자로 합치지 않는다.
@@ -114,10 +114,10 @@ C·선호는 칸만 두고 사람이 올 때까지 비운다.
 
 | 표본 | 기록 | 문장 | 통과 | 실패 | 불명 |
 |---|---|---|---|---|---|
-| k8s kubeadm 설치 (KO) | [inspect](2026-08-preo-k8s-kubeadm-inspect.md) | 14 | 6 | 8 | 0 |
+| k8s kubeadm 설치 (KO) | [inspect](2026-08-preo-k8s-kubeadm-inspect.md) | 14 | 8 | 6 | 0 |
 | FastAPI 첫걸음 (KO, AI 번역 표기) | [inspect](2026-08-preo-fastapi-first-steps-inspect.md) | 15 | 12 | 1 | 2 |
 
-FastAPI 쪽은 번역 고지를 경고로 넣지 않았고, 용어표 없는 TER는 불명으로 물었다. k8s 때 보이던 SAF·EXP 과탐이 줄었다.
+패키지 hold·번역 고지에는 SAF를 걸지 않았다. 용어표 없는 TER(인덱스/색인, 파일 경로/`path\\entrypoint`)는 불명으로 물었다.
 
 ## 쓰지 않는 것
 
