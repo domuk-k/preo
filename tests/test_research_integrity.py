@@ -158,7 +158,7 @@ def test_korean_review_covers_all_required_primary_texts() -> None:
 
 def test_each_korean_review_has_verified_state_and_required_sections() -> None:
     blocks = korean_review_blocks()
-    required_sections = {"연구 질문", "방법", "핵심 결과", "KSTL에 주는 시사점", "한계"}
+    required_sections = {"연구 질문", "방법", "핵심 결과", "preo에 주는 시사점", "한계"}
     for source_id in REQUIRED_KOREAN_SOURCE_IDS:
         block = blocks[source_id]
         assert "- 검증 상태: `verified`" in block

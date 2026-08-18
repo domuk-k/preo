@@ -1,4 +1,4 @@
-# KSTL proposal workspace: every record below is an unaccepted candidate.
+# preo proposal workspace: every record below is an unaccepted candidate.
 # Sources motivate investigation; they do not prove readability or safety effects.
 
 - id: KSTL-DOC-001
@@ -238,7 +238,7 @@
   title: 경고의 위험 원인, 결과, 회피 행동을 구분해 명시한다
   purpose: >-
     한국어 안전 효과에 관한 직접 근거 없이, 세 요소의 식별을 후속 실험에서
-    평가하려는 KSTL 설계 가설이다. choi-choi-2008은 회피 행동과 인접한 기술문서
+    평가하려는 설계 가설이다. choi-choi-2008은 회피 행동과 인접한 기술문서
     지시화행의 종결어미만 연구했으며, 이 세 요소가 안전을 높이거나 사고를
     줄인다는 근거는 제공하지 않는다.
   scope: [warning]

@@ -678,7 +678,7 @@
   source_ids: [sourdough-checker-repo]
   checked_on: "2026-08-09"
   notes: "README가 추출 출처와 재배포 위험 감수 문구를 명시한다. 파생 통제 사전을
-    커밋하지 않는 KSTL 정책과 대비되는 선례로 기록한다."
+    커밋하지 않는 preo 정책과 대비되는 선례로 기록한다."
 
 - id: oss.sourdough-checker.no-release
   claim: "2026-08-09 기준 sourdough-bread/asd-ste100-checker에는 발행된 GitHub

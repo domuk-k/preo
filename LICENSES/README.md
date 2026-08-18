@@ -2,7 +2,7 @@
 
 Copyright 2026 domuk-k.
 
-KSTL uses two licenses because software and project-authored language materials
+preo uses two licenses because software and project-authored language materials
 have different reuse needs. This mapping is the authoritative file-scope policy.
 
 ## Project code — Apache License 2.0
