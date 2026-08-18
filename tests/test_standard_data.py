@@ -71,6 +71,30 @@ def test_rule_candidates_validate_and_cover_required_areas() -> None:
     assert all(term in reference_invariants for term in ("이것", "제어기", "작성자 의도"))
 
 
+def test_ter_001_does_not_fail_surface_synonymy_without_term_table() -> None:
+    rules = yaml.safe_load(
+        (ROOT / "standard" / "rules" / "candidates.yaml").read_text()
+    )
+    ter = next(rule for rule in rules if rule["id"] == "KSTL-TER-001")
+    text = " ".join([ter["rewrite_guidance"], *ter["exceptions"]])
+    assert ter["automation"] == "deterministic"
+    assert "용어표" in text
+    assert "실패로 단정하지" in text
+    assert "불명" in text
+
+
+def test_saf_001_binds_to_safety_hazard_not_admonition_box() -> None:
+    rules = yaml.safe_load(
+        (ROOT / "standard" / "rules" / "candidates.yaml").read_text()
+    )
+    saf = next(rule for rule in rules if rule["id"] == "KSTL-SAF-001")
+    text = " ".join([saf["title"], saf["rewrite_guidance"], *saf["exceptions"]])
+    assert "안전 위험" in text
+    assert "#### 경고" in text
+    assert "패키지" in text
+    assert "번역 고지" in text
+
+
 def test_vocabulary_is_labeled_as_non_approved_example() -> None:
     schema = json.loads((ROOT / "schemas" / "vocabulary.schema.json").read_text())
     entries = yaml.safe_load(
